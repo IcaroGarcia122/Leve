@@ -79,18 +79,25 @@ export default function App() {
       href: 'https://wa.me/554236772575?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento%20na%20Leve%20Cal%C3%A7ados',
     },
     {
-      id: 'como-chegar',
-      icon: MapPin,
-      label: 'Como Chegar à Loja',
-      sub: 'Centro de Pinhão - PR',
-      href: 'https://www.google.com/maps/search/?api=1&query=Lojas+Leve+Pinhao+PR',
+      id: 'avaliar-confeccoes',
+      icon: Star,
+      label: 'Avaliar Leve Confecções',
+      sub: 'Sua opinião no Google · Confecções',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJi1eNqOpd75QRAvnyMyhBpbk',
     },
     {
-      id: 'avaliar-google',
+      id: 'avaliar-calcados',
       icon: Star,
-      label: 'Avaliar no Google',
-      sub: 'Sua opinião vale muito para nós',
-      href: 'https://search.google.com/local/writereview?placeid=Lojas+Leve+Pinhao+PR',
+      label: 'Avaliar Leve Calçados',
+      sub: 'Sua opinião no Google · Calçados',
+      href: 'https://search.google.com/local/writereview?placeid=ChIJCTKC-YFd75QRDzzG_6HDKNo',
+    },
+    {
+      id: 'como-chegar',
+      icon: MapPin,
+      label: 'Como Chegar às Lojas',
+      sub: 'Centro de Pinhão - PR',
+      href: 'https://www.google.com/maps/search/?api=1&query=Lojas+Leve+Pinhao+PR',
     },
     {
       id: 'vitrine-virtual',
@@ -108,7 +115,7 @@ export default function App() {
         <img
           src={fachadaImg}
           alt="Fachada Leve Confecções Pinhão"
-          className="h-full w-full object-cover scale-105 filter brightness-[0.80] contrast-[1.05]"
+          className="h-full w-full object-cover object-[32%_center] sm:object-center scale-105 filter brightness-[0.80] contrast-[1.05]"
           referrerPolicy="no-referrer"
         />
         {/* Layered dark veil overlays matching Lancaster */}
