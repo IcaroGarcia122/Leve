@@ -115,7 +115,7 @@ export default function App() {
         <img
           src={fachadaImg}
           alt="Fachada Leve Confecções Pinhão"
-          className="h-full w-full object-cover object-[32%_center] sm:object-center scale-105 filter brightness-[0.80] contrast-[1.05]"
+          className="h-full w-full object-cover object-[65%_25%] sm:object-center scale-105 filter brightness-[0.80] contrast-[1.05]"
           referrerPolicy="no-referrer"
         />
         {/* Layered dark veil overlays matching Lancaster */}
