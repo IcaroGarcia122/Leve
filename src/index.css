@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-navy: #0B1320;
+    --brand-navy-card: #0E1A2E;
+    --brand-orange: #FF6A00;
+    --brand-orange-light: #FF8533;
+    --brand-blue: #0056B3;
+    --brand-cream: #F8F9FA;
+    --brand-veil: #060B14;
+  }
+
+  body {
+    font-family: 'Barlow', 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: var(--brand-navy);
+    color: var(--brand-cream);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-body {
+  font-family: 'Barlow', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@keyframes leve-ribbon-spin {
+  to {
+    background-position: 0 42.43px;
+  }
+}
+
+.leve-ribbon {
+  border: 2px solid rgba(255, 248, 240, 0.85);
+  border-radius: 9999px;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 2.5rem;
+  background: repeating-linear-gradient(-45deg, #FF6A00 0 10px, #FFFFFF 10px 20px, #0056B3 20px 30px);
+  animation: 1.6s linear infinite leve-ribbon-spin;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 640px) {
+  .leve-ribbon {
+    width: 1.15rem;
+    height: 2.75rem;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
